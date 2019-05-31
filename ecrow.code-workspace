@@ -1,0 +1,40 @@
+{
+  "folders": [
+    {
+      "name": "Workspace",
+      "path": "."
+    },
+    {
+      "name": "Packages",
+      "path": "./packages"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "javascript.format.enable": false,
+    "prettier.eslintIntegration": true,
+    "prettier.ignorePath": ".prettierignore",
+    "git.autofetch": true,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "packages": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "zhouronghui.propertylist",
+      "esbenp.prettier-vscode",
+      "eamodio.gitlens",
+      "toba.vsfire",
+      "peterjausovec.vscode-docker"
+    ]
+  }
+}
