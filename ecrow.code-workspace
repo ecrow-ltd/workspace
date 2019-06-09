@@ -35,6 +35,7 @@
       "eamodio.gitlens",
       "toba.vsfire",
       "peterjausovec.vscode-docker"
+      "jpoissonnier.vscode-styled-components"
     ]
   }
 }
