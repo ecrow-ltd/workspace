@@ -9,7 +9,11 @@
       "packages/*"
     ]
   },
-  "scripts": {},
+  "scripts": {
+    "all": "node ./scripts/all.js",
+    "clone": "node ./scripts/clone.js",
+    "git": "node ./scripts/git.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ecrow-ltd/workspace.git"

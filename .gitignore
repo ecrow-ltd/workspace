@@ -39,3 +39,8 @@ node_modules
 # Package folder
 packages/*
 !packages/README.md
+modules/*
+!modules/README.md
+
+# The gitmodules file
+.gitmodules

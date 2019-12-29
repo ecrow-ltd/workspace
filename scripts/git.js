@@ -7,7 +7,7 @@ const fs = require('fs');
 const package = require('../package.json');
 
 // Get the workspace directory.
-const packageFolder = package['workspaces']['packages'][0];
+const packageFolder = package['workspaces']['packages'][0].slice(0, -1);
 
 // Get passed in arguments
 const args = process.argv.slice(2);
@@ -17,11 +17,14 @@ const PATH_ROOT = path.resolve('.');
 
 const isDirectory = source => fs.lstatSync(source).isDirectory();
 const getDirectories = source =>
-  fs.readdirSync(source).map(name => path.join(source, name)).filter(isDirectory);
+  fs
+    .readdirSync(source)
+    .map(name => path.join(source, name))
+    .filter(isDirectory);
 
 const folders = getDirectories(`${PATH_ROOT}/${packageFolder}`);
 
-for(var i = 0; i < folders.length; i++) {
+for (var i = 0; i < folders.length; i++) {
   const folder = folders[i];
   const command = `git ${args.join(' ')}`;
   const path = folder.split('/');
@@ -31,7 +34,9 @@ for(var i = 0; i < folders.length; i++) {
   console.log('----------');
   try {
     execSync(command, { cwd: `${folder}`, stdio: 'inherit' });
-  } catch(e) {
-    console.log('There was a problem running this command within this directory.')
+  } catch (e) {
+    console.log(
+      'There was a problem running this command within this directory.'
+    );
   }
 }
