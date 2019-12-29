@@ -1,0 +1,14 @@
+{
+  "singleQuote": true,
+  "alwaysShowStatus": true,
+  "autoFixOnSave": true,
+  "lintTask.enable": true,
+  "options": {
+    "excludes": [
+      "node_modules/",
+      "./git",
+      "./dist",
+      "./lib"
+    ]
+  }
+}

@@ -15,9 +15,7 @@
     "editor.detectIndentation": false,
     "editor.formatOnSave": true,
     "javascript.format.enable": false,
-    "prettier.eslintIntegration": true,
-    "prettier.ignorePath": ".prettierignore",
-    "git.autofetch": true,
+    "git.autofetch": false,
     "files.exclude": {
       "**/.git": true,
       "**/.svn": true,
@@ -30,12 +28,12 @@
   },
   "extensions": {
     "recommendations": [
-      "zhouronghui.propertylist",
       "esbenp.prettier-vscode",
       "eamodio.gitlens",
       "toba.vsfire",
-      "peterjausovec.vscode-docker"
-      "jpoissonnier.vscode-styled-components"
+      "jpoissonnier.vscode-styled-components",
+      "streetsidesoftware.code-spell-checker",
+      "mkaufman.htmlhint"
     ]
   }
 }
