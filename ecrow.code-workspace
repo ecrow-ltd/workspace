@@ -5,8 +5,8 @@
       "path": "."
     },
     {
-      "name": "Packages",
-      "path": "./packages"
+      "name": "Modules",
+      "path": "./modules"
     }
   ],
   "settings": {
@@ -23,7 +23,7 @@
       "**/CVS": true,
       "**/.DS_Store": true,
       "**/node_modules": true,
-      "packages": true
+      "modules": true
     }
   },
   "extensions": {

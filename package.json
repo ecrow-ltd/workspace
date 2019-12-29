@@ -6,7 +6,7 @@
   "main": "index.js",
   "workspaces": {
     "packages": [
-      "packages/*"
+      "modules/*"
     ]
   },
   "scripts": {
