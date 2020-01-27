@@ -36,9 +36,9 @@ function gitClone(args) {
 
   try {
     execSync(
-      `git submodule add -f --name ${folderName} ${repository} ${folderName}`,
+      `git submodule add -f --name ${folderName} ${repository} ${packageFolder}/${folderName}`,
       {
-        cwd: `${PATH_ROOT}/${packageFolder}`,
+        cwd: `${PATH_ROOT}`,
         stdio: ['ignore', 'ignore', 'pipe']
       }
     );
