@@ -23,8 +23,5 @@
   ],
   "author": "eCrow Ltd.",
   "license": "ISC",
-  "homepage": "https://github.com/ecrow-ltd/workspace.git#readme",
-  "devDependencies": {
-    "lerna": "^3.13.1"
-  }
+  "homepage": "https://github.com/ecrow-ltd/workspace.git#readme"
 }
