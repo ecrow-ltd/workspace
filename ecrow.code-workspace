@@ -14,6 +14,10 @@
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
     "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "eslint.workingDirectories": [{ "pattern": "./*/" }],
     "javascript.format.enable": false,
     "git.autofetch": false,
     "files.exclude": {
@@ -29,6 +33,7 @@
   "extensions": {
     "recommendations": [
       "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
       "eamodio.gitlens",
       "toba.vsfire",
       "jpoissonnier.vscode-styled-components",
