@@ -28,6 +28,9 @@
       "**/.DS_Store": true,
       "**/node_modules": true,
       "modules": true
+    },
+    "[yaml]": {
+      "editor.formatOnSave": false
     }
   },
   "extensions": {
